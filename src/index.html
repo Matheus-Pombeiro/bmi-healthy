@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Healthy</title>
+    <link rel="shortcut icon" href="../src/assets/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="../dist/output.css">
+</head>
+<body class="h-full w-screen bg-gray-200">
+    
+    <!--Header-->
+    <header class="container bg-white p-1 flex justify-between items-center drop-shadow">
+
+        <img src="assets/logo.png" alt="Logo" class="h-9 xl:h-12">
+
+        <div class="flex justify-between items-center gap-2">
+            
+            <img src="assets/dark.png" alt="Theme Icon" class="cursor-pointer duration-200 ease-in-out hover:scale-105" data-theme>
+
+            <!--G-Translate-->
+            <div class="gtranslate_wrapper flex justify-between items-center gap-1"></div>
+        
+        </div>
+
+    </header>
+
+    <!--Main-->
+    <main class="w-full mx-auto my-5 space-y-3">
+
+        <!--Title section-->
+        <section class="w-fit mx-auto">
+
+            <h1 class="text-lg xl:text-2xl font-bold tracking-widest">BMI <span class="text-red-500 font-extrabold tracking-wide">Healthy</span></h1>
+        
+        </section>
+
+        <!--Form section-->
+        <section class="form-container">
+
+            <!--Form-->
+            <form class="w-fit mx-auto space-y-4">
+
+                <div class="w-fit mx-auto space-y-1">
+                    <label for="height"><p>Height:</p></label>
+                    <input type="number" name="height" id="inHeight" class="bg-gray-50 py-2 px-3 text-md text-gray-800 placeholder-gray-300 focus:outline-none border border-gray-300 rounded-sm focus:border-blue-400 focus:ring-2 focus:ring-blue-400 focus:ring-opacity-20 transition duration-300 ease-in-out" data-inHeight>
+                </div>
+
+                <div class="w-fit mx-auto space-y-1">
+                    <label for="weight"><p>Weight:</p></label>
+                    <input type="number" name="weight" id="inWeight" class="bg-gray-50 py-2 px-3 text-md text-gray-800 placeholder-gray-300 focus:outline-none border border-gray-300 rounded-sm focus:border-blue-400 focus:ring-2 focus:ring-blue-400 focus:ring-opacity-20 transition duration-300 ease-in-out" data-inWeight>
+                </div>
+
+                <button type="submit" class="btn-blue">Check BMI</button>
+
+            </form>
+
+        </section>
+
+    </main>
+
+    <script>window.gtranslateSettings = {"default_language":"en","native_language_names":true,"languages":["en","pt"],"wrapper_selector":".gtranslate_wrapper","alt_flags":{"en":"usa","pt":"brazil"}}</script>
+    <script src="https://cdn.gtranslate.net/widgets/latest/flags.js" defer></script>
+
+</body>
+</html>
