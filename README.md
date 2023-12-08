@@ -23,6 +23,7 @@
     <li>General Stilization</li>
     <li>Mobile First</li>
     <li>Responsive Design</li>
+    <li>Animation</li>
 </ul>
 
 <p>JavaScript</p>
