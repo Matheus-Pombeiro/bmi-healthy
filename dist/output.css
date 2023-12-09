@@ -694,7 +694,7 @@ video {
 }
 
 .animate-pulse-heart {
-  animation: pulseheart 0.4s linear;
+  animation: pulseheart 1.5s linear infinite;
 }
 
 .cursor-pointer {
@@ -914,7 +914,7 @@ video {
 }
 
 .hover\:animate-pulse-heart:hover {
-  animation: pulseheart 0.4s linear;
+  animation: pulseheart 1.5s linear infinite;
 }
 
 .hover\:underline:hover {

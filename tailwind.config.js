@@ -13,7 +13,7 @@ module.exports = {
         },
       },
       animation: {
-        "pulse-heart": "pulseheart 0.4s linear"
+        "pulse-heart": "pulseheart 1.5s linear infinite"
       },
     },
   },
