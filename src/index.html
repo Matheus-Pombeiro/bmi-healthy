@@ -39,24 +39,28 @@
         <section class="main-container space-y-6">
 
             <!--Form-->
-            <form class="w-fit mx-auto space-y-4">
+            <form class="w-fit mx-auto space-y-6">
 
                 <div class="w-fit mx-auto space-y-1">
-                    <label for="height"><p>Height:</p></label>
-                    <input type="number" name="height" id="inHeight" class="bg-gray-50 py-2 px-3 text-md text-gray-800 placeholder-gray-300 focus:outline-none border border-gray-300 rounded-sm focus:border-blue-400 focus:ring-2 focus:ring-blue-400 focus:ring-opacity-20 transition duration-300 ease-in-out" data-inHeight>
+                    <label for="height"><p>Height (m):</p></label>
+                    <input type="number" name="height" id="inHeight" class="bg-gray-50 py-2 px-3 text-md text-gray-800 placeholder-gray-300 focus:outline-none border border-gray-300 rounded-sm focus:border-blue-400 focus:ring-2 focus:ring-blue-400 focus:ring-opacity-20 transition duration-300 ease-in-out" data-inHeight step="0.01" required>
                 </div>
 
                 <div class="w-fit mx-auto space-y-1">
-                    <label for="weight"><p>Weight:</p></label>
-                    <input type="number" name="weight" id="inWeight" class="bg-gray-50 py-2 px-3 text-md text-gray-800 placeholder-gray-300 focus:outline-none border border-gray-300 rounded-sm focus:border-blue-400 focus:ring-2 focus:ring-blue-400 focus:ring-opacity-20 transition duration-300 ease-in-out" data-inWeight>
+                    <label for="weight"><p>Weight (kg):</p></label>
+                    <input type="number" name="weight" id="inWeight" class="bg-gray-50 py-2 px-3 text-md text-gray-800 placeholder-gray-300 focus:outline-none border border-gray-300 rounded-sm focus:border-blue-400 focus:ring-2 focus:ring-blue-400 focus:ring-opacity-20 transition duration-300 ease-in-out" data-inWeight step="0.001" required>
                 </div>
 
-                <button type="submit" class="btn-blue">Check BMI</button>
+                <div class="w-fit mx-auto flex gap-3">
+                    <button type="submit" class="btn-blue">Check BMI</button>
+                    <button type="reset" class="btn-blue">Reset</button>
+                </div>
 
             </form>
 
             <img src="assets/logo.png" alt="Heart image" class="w-20 h-20 mx-auto animate-pulse-heart">
 
+            <!--Output-->
             <div class="w-64 xl:w-72 h-20 bg-gray-100 mx-auto flex items-center px-3 rounded-sm border border-gray-300 drop-shadow-sm">
                 <p class="font-semibold">Your BMI: <span data-outBMI></span></p>
             </div>
@@ -65,12 +69,17 @@
 
     </main>
 
+    <!--Footer-->
     <footer class="w-full h-11 bg-white py-2">
         <p class="text-center font-medium text-gray-600 text-lg"><a href="https://www.linkedin.com/in/matheus-pombeiro/" target="_blank" rel="noopener noreferrer" class="text-gray-800 hover:underline">Matheus Pombeiro</a> | 2023 &copy;</p>
     </footer>
 
+    <!--G-Translate-->
     <script>window.gtranslateSettings = {"default_language":"en","native_language_names":true,"languages":["en","pt"],"wrapper_selector":".gtranslate_wrapper","alt_flags":{"en":"usa","pt":"brazil"}}</script>
     <script src="https://cdn.gtranslate.net/widgets/latest/flags.js" defer></script>
+
+    <!--JS References-->
+    <script type="module" src="main.js"></script>
 
 </body>
 </html>
