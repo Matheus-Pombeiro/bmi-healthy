@@ -7,16 +7,27 @@
     <link rel="shortcut icon" href="../src/assets/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="../dist/output.css">
 </head>
-<body class="h-screen w-screen bg-gray-200 flex flex-col justify-between">
+<body class="h-screen w-screen bg-gray-200 flex flex-col justify-between dark:bg-zinc-800">
+
+    <!--Modal-->
+    <dialog class="w-96 h-4/6 xl:w-4/6 xl:h-96 p-7 rounded-md space-y-10 drop-shadow-md" data-modal>
+    
+        <img src="assets/close.png" alt="Close Button" class="h-9 w-9 ml-auto cursor-pointer duration-200 ease-in-out hover:scale-105" data-modal-close>
+
+        <p class="text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam repellat id facere aperiam aut illum eos. Dolor corporis debitis corrupti iure! Ipsam tempora iusto autem perferendis non facilis, repudiandae cum! Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius sequi sapiente expedita? Eaque alias necessitatibus, molestias, et a voluptate, officiis nemo vitae magni porro nisi blanditiis doloremque voluptatibus est consequuntur! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio sed quis nostrum asperiores consectetur quam aliquam vero voluptates repudiandae tenetur, veritatis iste autem eos eum facilis reiciendis labore dicta. Eius?</p>
+
+        <button class="btn-blue animate-bounce mx-auto"><a href="#" target="_blank" rel="noopener noreferrer">Know More</a></button>
+
+    </dialog>
     
     <!--Header-->
-    <header class="container bg-white p-1 flex justify-between items-center drop-shadow">
+    <header class="container bg-white p-1 flex justify-between items-center drop-shadow dark:bg-zinc-700">
 
         <img src="assets/logo.png" alt="Logo" class="h-9 xl:h-12">
 
         <div class="flex justify-between items-center gap-2">
             
-            <img src="assets/dark.png" alt="Theme Icon" class="cursor-pointer duration-200 ease-in-out hover:scale-105" data-theme>
+            <img src="assets/light.png" alt="Theme Icon" class="cursor-pointer duration-200 ease-in-out hover:scale-105 toggle" data-theme>
 
             <!--G-Translate-->
             <div class="gtranslate_wrapper flex justify-between items-center gap-1"></div>
@@ -31,7 +42,7 @@
         <!--Title section-->
         <section class="w-fit mx-auto">
 
-            <h1 class="text-xl xl:text-2xl font-bold tracking-widest">BMI <span class="text-red-500 font-extrabold tracking-wide">Healthy</span></h1>
+            <h1 class="text-xl xl:text-2xl font-bold tracking-widest dark:text-white">BMI <span class="text-red-500 font-extrabold tracking-wide">Healthy</span></h1>
         
         </section>
 
@@ -70,8 +81,8 @@
     </main>
 
     <!--Footer-->
-    <footer class="w-full h-11 bg-white py-2">
-        <p class="text-center font-medium text-gray-600 text-lg"><a href="https://www.linkedin.com/in/matheus-pombeiro/" target="_blank" rel="noopener noreferrer" class="text-gray-800 hover:underline">Matheus Pombeiro</a> | 2023 &copy;</p>
+    <footer class="w-full h-11 bg-white py-2 dark:bg-zinc-700">
+        <p class="text-center font-medium text-gray-600 text-lg dark:text-white"><a href="https://www.linkedin.com/in/matheus-pombeiro/" target="_blank" rel="noopener noreferrer" class="text-gray-800 hover:underline dark:text-white">Matheus Pombeiro</a> | 2023 &copy;</p>
     </footer>
 
     <!--G-Translate-->
