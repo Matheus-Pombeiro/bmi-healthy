@@ -1,9 +1,18 @@
+// Import functions
+import openModal from "./modal.js";
+import themeToggle from "./themeToggle.js";
+
 // Gets some HTML items
+const modal = document.querySelector("[data-modal]");           // Modal elements
+const modalClose = document.querySelector("[data-modal-close]");
 const theme = document.querySelector("[data-theme]");           // Theme
 const form = document.querySelector("form");                    // Form elements
 const inHeight = document.querySelector("[data-inHeight]");     
 const inWeight = document.querySelector("[data-inWeight]");
 const outBMI = document.querySelector("[data-outBMI]");         // Output
+
+openModal(modal, modalClose);
+themeToggle(theme);
 
 // Function to calc the BMI
 const bmiCalc = (height, weight) => {
@@ -47,10 +56,6 @@ form.addEventListener("submit", (e) => {
         alert("You need to put a ',' in the height, like '1,70'.");
         return;
     }
-
-    console.log(bmiCalc(height, weight));
-
-    console.log(bmiResult(bmiCalc(height, weight)));
 
     outBMI.innerHTML = `${bmiCalc(height, weight).toFixed(1)} - ${bmiResult(bmiCalc(height, weight))}`;
 
