@@ -23,7 +23,7 @@
     <li>General Stilization</li>
     <li>Mobile First</li>
     <li>Responsive Design</li>
-    <li>Animation</li>
+    <li>Animations</li>
 </ul>
 
 <p>JavaScript</p>
@@ -34,7 +34,7 @@
     <li>Dark/Light Theme Switch</li>
 </ul>
 
-<p>You can access the BMI Healthy's webpage by clicking <a href="" target="_blank" rel="noopener noreferrer">here</a>.</p>
+<p>You can access the BMI Healthy's webpage by clicking <a href="https://matheus-pombeiro.github.io/bmi-healthy/src/index.html" target="_blank" rel="noopener noreferrer">here</a>.</p>
 
 <hr>
 
