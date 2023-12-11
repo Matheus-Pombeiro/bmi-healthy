@@ -31,7 +31,7 @@
 <ul>
     <li>Programing Logic and Algorithms</li>
     <li>Modal (Pop-up)</li>
-    <li>Dark/Light Theme Switch</li>
+    <li>Dark/Light Theme Switching</li>
     <li>Local Storage to save user theme preferences</li>
 </ul>
 
