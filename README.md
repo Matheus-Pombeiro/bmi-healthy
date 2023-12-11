@@ -32,6 +32,7 @@
     <li>Programing Logic and Algorithms</li>
     <li>Modal (Pop-up)</li>
     <li>Dark/Light Theme Switch</li>
+    <li>Local Storage to save user theme preferences</li>
 </ul>
 
 <p>You can access the BMI Healthy's webpage by clicking <a href="https://matheus-pombeiro.github.io/bmi-healthy/src/index.html" target="_blank" rel="noopener noreferrer">here</a>.</p>
